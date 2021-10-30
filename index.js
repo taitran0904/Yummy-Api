@@ -32,6 +32,7 @@ app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/posts", postRoute);
 
-app.listen(1900, () => {
+const PORT = process.env || 1900;
+app.listen(PORT, () => {
   console.log("hi");
 });
